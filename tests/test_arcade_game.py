@@ -11,3 +11,15 @@ def test_eat_ghost_returns_true():
 
 def test_score_returns_true():
     assert score(True, True) == True
+
+
+def test_score_returns_true_when_true_false():
+    assert score(False, True) == True
+
+
+def test_score_returns_true_when_true_false():
+    assert score(True, False) == True
+
+
+def test_score_returns_false():
+    assert score(False, False) == False
