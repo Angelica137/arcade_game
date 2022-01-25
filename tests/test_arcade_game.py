@@ -27,3 +27,7 @@ def test_score_returns_false():
 
 def test_lose_returns_true_if_ghost_ifnot_power_pallet():
     assert lose(False, True) == True
+
+
+def test_lose_returns_false_if_ghost_if_powerpallet():
+    assert lose(True, True) == False
