@@ -10,7 +10,7 @@ def eat_ghost(power_pellet_active: bool, touching_ghost: bool) -> bool:
 def score(touching_pallet: bool, touching_dot: bool) -> bool:
     """
     Tells us if user has scored
-                """
+    """
     if touching_pallet or touching_dot:
         return True
     return False
