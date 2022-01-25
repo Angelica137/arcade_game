@@ -35,3 +35,11 @@ def test_lose_returns_false_if_ghost_if_powerpallet():
 
 def test_win_returns_false():
     assert win(False, True, False) == False
+
+
+def test_win_returns_true():
+    assert win(True, True, False) == True
+
+
+def test_win_returns_true():
+    assert win(True, True, True) == True
