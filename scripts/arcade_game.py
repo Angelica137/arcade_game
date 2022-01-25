@@ -9,9 +9,7 @@ def score(touching_pallet: bool, touching_dot: bool) -> bool:
     """
     Tells us if user has scored
     """
-    if touching_pallet or touching_dot:
-        return True
-    return False
+    return touching_pallet or touching_dot
 
 
 def lose(power_pallet_active: bool, touching_ghost: bool) -> bool:
