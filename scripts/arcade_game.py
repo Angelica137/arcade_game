@@ -11,3 +11,9 @@ def score(touching_pallet: bool, touching_dot: bool) -> bool:
     if touching_pallet or touching_dot:
         return True
     return False
+
+
+def lose(power_pallet_active: bool, touching_ghost: bool) -> bool:
+    if not power_pallet_active:
+        return True
+    return False
