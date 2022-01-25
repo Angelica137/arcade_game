@@ -23,6 +23,4 @@ def win(eaten_all_dots: bool, power_pallet_active: bool, touching_ghost: bool) -
     """
     Tells us if the user has won
     """
-    if eaten_all_dots and not lose(power_pallet_active, touching_ghost):
-        return True
-    return False
+    return eaten_all_dots and not lose(power_pallet_active, touching_ghost)
