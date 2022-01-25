@@ -16,9 +16,7 @@ def lose(power_pallet_active: bool, touching_ghost: bool) -> bool:
     """
     Tells us if the user has lost
     """
-    if not power_pallet_active and touching_ghost:
-        return True
-    return False
+    return not power_pallet_active and touching_ghost
 
 
 def win(eaten_all_dots: bool, power_pallet_active: bool, touching_ghost: bool) -> bool:
