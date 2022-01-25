@@ -23,3 +23,12 @@ def lose(power_pallet_active: bool, touching_ghost: bool) -> bool:
     if not power_pallet_active and touching_ghost:
         return True
     return False
+
+
+def win(eaten_all_dots: bool, power_pallet_active: bool, touching_ghost: bool) -> bool:
+    """
+    Tells us if the user has won
+    """
+    if eaten_all_dots and not lose(power_pallet_active, touching_ghost):
+        return True
+    return False
